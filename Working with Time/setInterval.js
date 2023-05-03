@@ -1,7 +1,7 @@
-const waitTime = 500;
+const waitInterval = 500;
 let currentTime = 0;
 const IncrementTime = () => {
-    currentTime += waitTime;
+    currentTime += waitInterval;
     console.log( `waiting ${currentTime / 1000} seconds` );
 };
-setInterval( IncrementTime, waitTime );
+setInterval( IncrementTime, waitInterval );
