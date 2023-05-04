@@ -75,3 +75,10 @@ output >>>
     name: 'string'
     }
 */
+
+// Relative PATH
+const from = "c://Users/tarun/Node.js Practice/";
+const to = "c://Users/tarun/Working with Time/Path_Module.js";
+console.log(
+    `Relative PATH from 'from' to 'to' : ${path.relative( from,to )}`   // output >>> Relative PATH from 'from' to 'to' : ..\Working with Time\Path_Module.js
+);
