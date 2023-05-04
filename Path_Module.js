@@ -41,3 +41,11 @@ console.log(
 console.log(
     `Path segments : ${__filename.split(path.sep)}`   // output >>> Path segments : c:,Users,tarun,Node.js Practice,Path_Module.js
 );
+// Joining srtings with PATH
+const dir = path.join(
+    __filename,
+    "string_1",
+    "string_2",
+    "string_3"
+);
+console.log( `Joining strings : ${dir}` );   // output >>> Joining strings : c:\Users\tarun\Node.js Practice\Path_Module.js\string_1\string_2\string_3
