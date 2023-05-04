@@ -82,3 +82,10 @@ const to = "c://Users/tarun/Working with Time/Path_Module.js";
 console.log(
     `Relative PATH from 'from' to 'to' : ${path.relative( from,to )}`   // output >>> Relative PATH from 'from' to 'to' : ..\Working with Time\Path_Module.js
 );
+
+// Resolve PATH - resolves a sequence of paths or path segments into an absolute path.
+console.log(
+    `Absolute PATH : ${path.resolve('string_1', 'string_2/png/', '../img/1.png')}`
+    // working directory : C:\Users\tarun\Node.js Practice
+    // output >>> Absolute PATH : C:\Users\tarun\Node.js Practice\string_1\string_2\img\1.png
+);
