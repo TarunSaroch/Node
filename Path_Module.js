@@ -49,3 +49,14 @@ const dir = path.join(
     "string_3"
 );
 console.log( `Joining strings : ${dir}` );   // output >>> Joining strings : c:\Users\tarun\Node.js Practice\Path_Module.js\string_1\string_2\string_3
+
+// Path normalize
+const newDir = "c://Users/tarun/Node.js Practice/../string.js";
+const newDir2 = "c:\\/\/\\//Users\/\/\////tarun/Node.js Practice\\//..\/\/string.js";
+console.log(
+    `\nAfter Normalizing newDir : ${path.normalize(newDir)}`   // output >>> After Normalizing newDir : c:\Users\tarun\string.js
+);
+console.log(
+    `\nAfter Normalizing newDir2 : ${path.normalize(newDir2)}`   // output >>> After Normalizing newDir2 : c:\Users\tarun\string.js
+);
+
