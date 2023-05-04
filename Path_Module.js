@@ -60,3 +60,18 @@ console.log(
     `\nAfter Normalizing newDir2 : ${path.normalize(newDir2)}`   // output >>> After Normalizing newDir2 : c:\Users\tarun\string.js
 );
 
+// Parse PATH
+const parse = path.parse(newDir);
+console.log(
+    parse
+);
+/*
+output >>>
+    {
+    root: 'c:/',
+    dir: 'c://Users/tarun/Node.js Practice/..',
+    base: 'string.js',
+    ext: '.js',
+    name: 'string'
+    }
+*/
